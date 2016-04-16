@@ -1,0 +1,163 @@
+<ion-navbar dark *navbar>
+    <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-title>Register</ion-title>
+</ion-navbar>
+<h1>It's Header Place..</h1>
+<ion-content style="background-color: #F6F6F6">
+
+
+
+
+    <!--  ==========================================Register==============================-->
+
+
+    <div style="margin-left: 30px ;margin-right: 25px">
+        <h1 class="hding">register an account<br/>
+            <hr width="35%" class="hr_gray"/>
+        </h1>
+
+
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Email:</strong>
+            <ion-item>
+                <ion-input type="email" placeholder="email@email.com"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Create Password:</strong>
+            <ion-item>
+                <ion-input type="password" placeholder="***********"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Re-enter Password:</strong>
+            <ion-item>
+                <ion-input type="password" placeholder="***********"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+
+
+        <ion-list style="margin-left: 15px;margin-right: 15px">
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Location</strong>
+            <ion-item>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-label>Location</ion-label>
+                <ion-select>
+                    <ion-option value="u.a.e">U.A.E</ion-option>
+                    <ion-option value="somalia">Somalia</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+
+        <ion-list style="margin-left: 15px;margin-right: 15px">
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Acount Type</strong>
+            <ion-item>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-label>Acount type</ion-label>
+                <ion-select>
+                    <ion-option value="personal">Personal</ion-option>
+                    <ion-option value="business">Business</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+
+        <h4>
+            <strong style="font-weight: 700; color: #B74746">Add your Contact Information</strong>
+        </h4>
+
+
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Contact Name:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="First name"></ion-input>
+            </ion-item>
+            <!--<br/>-->
+            <ion-item>
+                <ion-input type="text" placeholder="Last name"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Company Name:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="google lnc."></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Mobile:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="0300-000-0000"></ion-input>
+            </ion-item>
+        </ion-list>
+        <!--<br/>-->
+
+        <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Phone:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="0213-000-0000"></ion-input>
+            </ion-item>
+        </ion-list>
+
+
+    </div>
+
+
+    <br/>
+    <div style="font-size: 20px;margin-left: 35px;margin-right: 29px">Upon creating my account,I agree to:</div>
+
+    <p style="text-align: center">
+        <ion-checkbox danger></ion-checkbox> &nbsp;&nbsp;&nbsp;&nbsp; Koodka Free Membership Agreement.
+        <br/>
+
+    </p>
+    <button secondary style="margin-left: 31px">Submit</button>
+    <br/>
+
+    <br/>
+    <br/>
+
+
+</ion-content>
+
+
+<style>
+    ion-list>ion-icon {
+        color:red;
+        font-size: 15px
+    }
+    
+    .hding {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        color: #372f2b;
+        font-weight: 600;
+        /*margin: 30px 0;*/
+        padding: 30px 0;
+        position: relative;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .hr_gray {
+        float: left;
+        padding: 1px;
+        background-color: #c8ccce
+    }
+</style>

@@ -1,0 +1,143 @@
+<ion-navbar  dark *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Contact</ion-title>
+</ion-navbar>
+<h1>It's Header Place..</h1>
+<ion-content style="background-color: #F6F6F6">
+
+
+    <div class="recent-title">About<br/>
+      <hr width="30%" class="hr_gray"/>
+    </div>
+
+    <div style="margin-left: 30px ;margin-right: 25px">
+      <p style="text-align: center;font-size:24px;font-family: inherit">Office Address</p>
+     
+     <br/>
+     <address>
+
+  <strong>Hargeisa Office</strong><br>
+
+  Shacabka Street<br>
+
+  26th June<br>
+
+  Hargeisa - Somaliland<br>
+
+  <abbr title="Phone">Contact:</abbr> +252 616651266
+
+</address>
+     
+     <address>
+
+  <strong>Mogadishu Office</strong><br>
+
+  Area KM4<br>
+
+  26th June Hodan District,<br>
+
+  Mogadishu - Somalia<br>
+
+  <abbr title="Phone">Contact:</abbr> +252 612348043 / 616651266
+
+</address>
+<br/><br/><br/>
+
+                              <!--Contact inputs</!--Co>-->
+<div>
+  
+    <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Contact Name:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="First name"></ion-input>
+            </ion-item>
+            </ion-list>
+                 
+            <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+           <strong>Mobile:</strong>
+            <ion-item>
+                <ion-input type="text" placeholder="0300-000-0000"></ion-input>
+            </ion-item>
+        </ion-list>
+        
+           <ion-list inset>
+            <ion-icon name="star-outline"></ion-icon>
+            <strong>Email:</strong>
+            <ion-item>
+                <ion-input type="email" placeholder="email@email.com"></ion-input>
+            </ion-item>
+        </ion-list>
+        
+         <ion-list inset>
+           <ion-icon name="star-outline"></ion-icon>
+        <strong>Message:</strong>
+        <ion-item>
+          <textarea placeholder="Something About ad..."></textarea>        </ion-item>
+
+      </ion-list>
+  
+</div>
+     
+     
+      
+
+    <p style="text-align: center">
+        <ion-checkbox danger></ion-checkbox>
+        <span style="margin-left: 35px;margin-right: 35px">By clicking 'Submit' you agree to our
+          <b (click)="goTrems()">Terms Of Use</b>
+           </span>
+        <br/>
+
+    </p>
+    <button secondary style="margin-left: 31px">Submit</button>
+    <br/>
+     
+     
+     
+     
+     
+      
+</div>
+
+
+
+</ion-content>
+
+
+<style>
+ ion-list>ion-icon {
+        color: red;
+        font-size: 15px
+    }
+address {
+    display: inline-table;
+    font-family:  "Times New Roman", Times, serif;
+    width: 48%;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143;
+}
+
+  .recent-title {
+    /*font-size: 22px;*/
+    margin: 50px 20px ;
+    /*padding: 0 0 32px;*/
+    /*position: relative;*/
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #372f2b;
+    line-height: 1.1;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  .hr_gray {
+    float: left;
+    padding: 1px;
+    background-color: #c8ccce
+  }
+</style>

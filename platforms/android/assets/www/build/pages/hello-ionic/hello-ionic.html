@@ -1,0 +1,359 @@
+<ion-navbar dark *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <!--<ion-title>Hello Ionic</ion-title>-->
+</ion-navbar>
+
+
+<ion-content style="background-color: #F6F6F6">
+    <div style="background-color: #B74746">
+        <br/>
+
+        <img src="http://koodka.com/810709555.png" alt="" width="80%">
+
+
+        <input list="city" name="city" placeholder="City Name" style="padding: 11px 17%; border-radius: 10px;margin-left: 10%">
+        <datalist id="city">
+            <option value="Mogadishu">Mogadishu</option>
+            <option value="Darusalam City">Darusalam City</option>
+            <option value="Cadado">Cadado</option>
+            <option value="Gaalkacyo">Gaalkacyo</option>
+            <option value="Dhuusamareeb">Dhuusamareeb</option>
+            <option value="Hobyo">Hobyo</option>
+            <option value="Ceelbuur">Ceelbuur</option>
+            <option value="Ceeldhere">Ceeldhere</option>
+            <option value="Caabudwaq">Caabudwaq</option>
+            <option value="Guriceel">Guriceel</option>
+            <option value="Puntland">Puntland</option>
+            <option value="Gaalkacyo">Gaalkacyo</option>
+            <option value="Garowe">Garowe</option>
+            <option value="Bosaso">Bosaso</option>
+            <option value="Qardho">Qardho</option>
+            <option value="Ayl">Ayl</option>
+            <option value="Qandala">Qandala</option>
+            <option value="Badhan">Badhan</option>
+            <option value="Somaliland">Somaliland</option>
+            <option value="Borame">Borame</option>
+            <option value="Hargeisa">Hargeisa</option>
+            <option value="Berbera">Berbera</option>
+            <option value="Burco">Burco</option>
+            <option value="Shiikh">Shiikh</option>
+            <option value="Bohotle">Bohotle</option>
+            <option value="Laas Canood">Laas Canood</option>
+            <option value="Ceerigaabo">Ceerigaabo</option>
+            <option value="Oodwayne">Oodwayne</option>
+            <option value="Daarbuduq">Daarbuduq</option>
+            <option value="Kismayo">Kismayo</option>
+            <option value="Afmadow">Afmadow</option>
+            <option value="Bardhere">Bardhere</option>
+            <option value="Jamaame">Jamaame</option>
+            <option value="Luuq">Luuq</option>
+            <option value="Garbahaarey">Garbahaarey</option>
+            <option value="Dhobleey">Dhobleey</option>
+            <option value="Baidoa">Baidoa</option>
+            <option value="Buur Hakaba">Buur Hakaba</option>
+            <option value="Xuddur">Xuddur</option>
+            <option value="Merca">Merca</option>
+            <option value="Baraawe">Baraawe</option>
+            <option value="Qoryoley">Qoryoley</option>
+            <option value="Dinsoor">Dinsoor</option>
+            <option value="Afgoye">Afgoye</option>
+            <option value="Wanlawayn">Wanlawayn</option>
+            <option value="Jowhaar">Jowhaar</option>
+            <option value="Balcad">Balcad</option>
+            <option value="Adale">Adale</option>
+            <option value="Balcad">Balcad</option>
+            <option value="Mahaday">Mahaday</option>
+            <option value="Bulobarde">Bulobarde</option>
+            <option value="Baladweyne">Baladweyne</option>
+            <option value="Mataban">Mataban</option>
+        </datalist>
+        <br/>
+
+        <ion-list id="top">
+            <!--<ion-item style="background-color: white;width: 80%;margin-left: 10%;border-radius: 10px">-->
+            <!--<ion-input type="text" name="lat" placeholder="City Name">-->
+
+
+            <!--</ion-input>-->
+            <!--</ion-item>-->
+            <br/>
+            <ion-item style="width: 90%;margin-left: 5%;border-radius: 10px">
+                <ion-input type="text" name="lat" placeholder="What are you looking for...."></ion-input>
+            </ion-item>
+
+        </ion-list>
+
+        <br/>
+    </div>
+    <ion-list>
+        <ion-item style="background-color: #F6F6F6">
+            <ion-label>Categories</ion-label>
+            <ion-select>
+                <ion-option value="Community">Community</ion-option>
+                <ion-option value="Electronic">Electronic</ion-option>
+                <ion-option value="Property">Property</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+<!--<button (click)="nextPage()"> Chacha.....</button>-->
+    <ion-card>
+
+        <ion-card-content>
+            <img src="http://koodka.com/ym-content/uploads/2016/02/05/338165283.jpg" alt="" width="100%">
+        </ion-card-content>
+
+    </ion-card>
+
+    <br/>
+    <h4 class="future">FUTURE ADS<br/>
+        <hr width="35%" class="hr_gray"/>
+    </h4>
+    <br/>
+
+    <div style="margin-left: 4%;width: 91%">
+
+
+        <ion-card *ngFor="#i of tasks">
+
+            <ion-card-header></ion-card-header>
+
+            <ion-card-content>
+                <h1 _ngcontent-fvr-9="">{{i.title}}</h1> <br/>
+                <img [src]="i.img">
+                <ion-list>
+                    <ion-item>
+
+                        <a href="">
+                            <ion-icon name="cart"></ion-icon>
+                            {{i.name}}</a>
+                    </ion-item>
+
+                    <ion-item>
+                        <a href="">
+                            <ion-icon name="medical"></ion-icon>
+                        </a>
+                        {{i.rs}}
+                    </ion-item>
+
+                    <ion-item><a href="">
+                        <ion-icon name="cafe"></ion-icon>
+                    </a>
+                        {{i.description}}
+                    </ion-item>
+                </ion-list>
+                <br/>
+
+                <p>
+                    {{i.text}}
+                </p><br/>
+            </ion-card-content>
+            <br/>
+            <br/>
+            <br/>
+        </ion-card>
+
+    </div>
+    <!--<a href="#top"><button light> Light</button></a>-->
+
+    <section id="advertisment-home">
+        <div class="container">
+            <div class="image-center">
+                <a href="http://google.com"><img src="http://koodka.com/ym-content/uploads/2015/10/29/74432373.jpg"
+                                                 class="img-responsive"></a></div>
+        </div>
+    </section>
+
+    <div class="recent-title">Most Recent Ads<br/>
+        <hr width="35%" class="hr_gray"/>
+    </div>
+
+    <div style="margin-left: 7%;width: 91%" *ngFor="#i of item">
+
+
+        <div class="title">{{i.title}} <br/>
+            <hr width="21%" class="hr"/>
+        </div>
+        <div class="image"><a href="">
+            <img [src]="i.img"> </a></div>
+        <div class="right">
+            <div class="price">{{i.rs}}</div>
+            <div class="time">{{i.name}}</div>
+            <div class="category">{{i.description}}</div>
+        </div>
+
+    </div>
+
+    <!--=============FOOTER============-->
+    <div class="img">
+        <h2 style="color: white">follow us </h2>
+
+        <div>
+            <img src="https://image.freepik.com/free-icon/facebook-letter-logo_318-40258.png" width="55" height="50">
+            <img src="https://image.freepik.com/free-icon/twitter-logo_318-40459.png" width="55" height="50">
+            <img src="http://freeimagescollection.com/images/social-media/instagram-black-white-logo-white-background-f2.jpg"width="55" height="50">
+            <img src="https://image.freepik.com/free-icon/youtube-logo_318-33597.png" width="55" height="50">
+        </div>
+    </div>
+    <section id="footer">
+        <div class="container">
+            <div class="col-lg-12 text-center menu">
+                <a href="">About</a> -
+                <a href="">Contact</a> -
+                <a href="">Posting Rules</a> -
+                <a href="">Privacy Policy</a> -
+                <a href="">Terms Of Use</a> -
+                <a href="">FAQ</a>
+
+            </div>
+        </div>
+        <hr/>
+        <clear>
+            <div class="container">
+                <div class="col-lg-6 copyright">© 2015-2016 Koodka All Rights Reserved</div>
+                <div class="col-lg-6 text-right developer">Design &amp; Development by:
+                    <!--a href="http://yasmalik.com">Yasir Malik</a--></div>
+            </div>
+        </clear>
+    </section>
+
+
+</ion-content>
+<style>
+
+    .img > div {
+        margin-left: 17%;
+    }
+
+    #footer {
+        color: #c6c6c6;
+        background-color: #333333;
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+
+    }
+
+    .container a {
+        color: #c6c6c6;
+        text-decoration: none;
+        /*background-color: #5b5b5b;*/
+    }
+
+    div.img {
+        background-image: url("http://koodka.com/imags/social.jpg");
+        padding-bottom: 70px;
+    }
+
+    div.img > h2 {
+        text-transform: uppercase;
+        padding: 50px 10px 0 90px;
+        color: white;
+    }
+
+    .hr_gray {
+        float: left;
+        padding: 1px;
+        background-color: #c8ccce
+    }
+
+    .hr {
+        background-color: #B74746;
+        float: left;
+        padding: 1px;
+    }
+
+    .category {
+        font-weight: 600;
+        line-height: 1.2;
+        padding-bottom: 3px;
+        display: block;
+        color: #888;
+    }
+
+    .time {
+        color: #372f2b;
+        padding-bottom: 3px;
+        display: block;
+        font-size: 13px;
+    }
+
+    .price {
+        text-decoration: underline;
+        padding-bottom: 3px;
+        display: block;
+        font-size: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #372f2b;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #B74746;
+    }
+
+    .image {
+        max-width: 30%;
+        float: left;
+        vertical-align: top;
+        margin-bottom: 10px;
+        margin-right: 10px !important;
+    }
+
+    .recent-title {
+        /*text-decoration: underline  red;*/
+        /*text-decoration-color: red;*/
+        margin: 30px 20px;
+        padding: 0 0 32px;
+        position: relative;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: #372f2b;
+        line-height: 1.1;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 19px;
+        text-transform: uppercase;
+    }
+
+    .title {
+        font-size: 19px;
+        color: black;
+        line-height: 1.1;
+        /*font-weight: 600;*/
+        text-decoration: none;
+        /*padding-bottom: 12px;*/
+        margin-bottom: 11px;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #advertisment-home {
+        color: #FFF;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        padding: 50px 0;
+    }
+
+    .future {
+        margin-left: 12px;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 2px;
+        line-height: 1.1;
+    }
+</style>

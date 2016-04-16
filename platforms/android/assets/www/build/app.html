@@ -1,0 +1,49 @@
+<ion-menu [content]="content">
+
+  <ion-toolbar>
+    <ion-title>Pages</ion-title>
+  </ion-toolbar>
+
+  <ion-content style="background-color: #F6F6F6">
+    <ion-list>
+      <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+
+    <!--<ion-list>-->
+      <!--<ion-item>-->
+        <!--<ion-label>Categories</ion-label>-->
+        <!--<ion-select>-->
+          <!--<ion-option value="nes">Community</ion-option>-->
+          <!--<ion-option value="n64">Electronic</ion-option>-->
+          <!--<ion-option value="ps">Property</ion-option>-->
+          <!--<ion-option value="genesis">Sega Genesis</ion-option>-->
+          <!--<ion-option value="saturn">Sega Saturn</ion-option>-->
+          <!--<ion-option value="snes">SNES</ion-option>-->
+        <!--</ion-select>-->
+      <!--</ion-item>-->
+    <!--</ion-list>-->
+
+
+
+      <button ion-item>
+        About
+      </button>
+      <button ion-item>
+        Contact
+      </button>
+      <button ion-item>
+        FAQ
+      </button>
+      <button ion-item>
+        Login
+      </button>
+      <button ion-item>
+        Register
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>

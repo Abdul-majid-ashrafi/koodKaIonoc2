@@ -1,0 +1,184 @@
+<ion-navbar dark *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FAQ</ion-title>
+</ion-navbar>
+<h1>It's Header Place..</h1>
+<ion-content style="background-color: #F6F6F6">
+
+
+    <div style="margin-left: 4%;width: 91%">
+
+        <h1 class="hding">FAQ<br/>
+            <hr width="35%" class="hr_gray"/>
+        </h1>
+
+        <!--======================================FAQ Area =====================================-->
+
+        <!--<div >-->
+        <!--<p >-->
+        <!---->
+        <!--</p>-->
+
+        <!--<ion-card id="headers">-->
+        <!--<ion-card-header>-->
+        <!--Header-->
+        <!--</ion-card-header>-->
+        <!--<ion-card-content>-->
+        <!--The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.-->
+        <!--</ion-card-content>-->
+        <!--</ion-card>-->
+
+
+        <!--</div>-->
+
+
+       <div>
+           <details class="header">
+               <summary><span>Why are ads on Koodka.com free?</span></summary>
+               <hr/>
+               <span style="text-align: justify">
+                   We believe that offering free advertising is a convenient, fun, and easy way for people in similar areas
+                   to search, buy, and sell
+                   their items. It gives you the opportunity to find exactly what you’re looking for or sell to the right
+                   buyer in your area.
+                   It provides business owners with the exact target audience they need to promote their products or
+                   services.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>         How do I post an ad?      </span></summary>
+               <hr/>
+               <span>
+                   It’s very easy to post an ad on Koodka.com <br/>
+                   First you'll need to sign up to site, once you have an account, all you need to do is login to be able
+                   to post an ad on koodka.com.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>  Can I post anything I like?    </span></summary>
+               <hr/>
+               <span>
+                   Koodka.com has rules and policies in place for postings. There are instance where we have to delete ads
+                   if we believe that it does not satisfy our rules or policies.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>    Who can view my ads?  </span></summary>
+               <hr/>
+               <span>
+                   All our visitors can view ads on Koodka.com, even if they are not registered. Remember,
+                   the more people see your ads the bigger the chance of your item being bought quicker.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span> How do I contact someone who has posted a classified ad?  </span></summary>
+               <hr/>
+               <span>
+                   The item details page lists contact information. In most cases there is a telephone number and email
+                   address on the listing, where you can contact the seller. However, this site is never involved in any
+                   transaction,
+                   and does not handle payments, shipping, guarantee transactions and provide escrow services.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>  How many free classified ads can I post on Koodka.com?  </span></summary>
+               <hr/>
+
+               <span>
+                   Personal & Business accounts can both post up to 5 free classified ads. If you have other ads currently
+                   running, you must either cancel
+                   and replace those ads, or wait until they expire. You can choose to
+                   run more than 5 ads and for that you can request to activate it when you login to your account.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>    How long will my ads run for?   </span></summary>
+               <hr/>
+
+               <span>
+                   Your free ads will run for 1 month. If you would like to continue to run your ads, please
+                   renew it once the one-month period is over. If you are business owner and need more time and some
+                   special attention, please contact us.
+               </span>
+           </details>
+
+           <details class="header">
+               <summary><span>  How do I report suspicious ads? </span></summary>
+               <hr/>
+
+               <span>
+                   We work very hard in keeping our site clean. However due to huge number
+                   of posting there can be times when someone edits his/her post when it’s already verified. Once you
+                   notice
+                   something suspicious please press the ‘report’ button on the specific ad to inform us, or contact us on
+                   report@koodka.com
+               </span>
+           </details>
+       </div>
+
+
+    </div>
+
+
+</ion-content>
+
+
+<style>
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /*summary span{*/
+    /*text-decoration: underline;*/
+    /*}*/
+
+    summary  :active{
+
+    }
+
+.header :active , .header:hover{
+    background-color: white;
+    text-decoration: underline;
+}
+    .header {
+        /*background-color: red;*/
+        margin-left: 15px;
+        margin-right: 15px;
+        border: solid 2px #e9e9e9;
+        font-size: 16px;
+        border-radius: 3px;
+        padding: 9px;
+        margin-bottom: 5px;;
+    }
+
+    /*li>ion-icon{*/
+    /*color: #B74746;*/
+    /*}*/
+
+    .hding {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        color: #372f2b;
+        font-weight: 600;
+        margin: 30px 0;
+        padding: 30px 0;
+        position: relative;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .hr_gray {
+        float: left;
+        padding: 1px;
+        background-color: #c8ccce
+    }
+</style>
